@@ -11,6 +11,7 @@ from models import mtl_model
 # np.random.seed(0)
 
 flags = tf.app.flags
+tf.app.flags.DEFINE_string('f', '', 'kernel')
 
 flags.DEFINE_integer("word_dim", 300, "word embedding size")
 flags.DEFINE_integer("num_epochs", 100, "number of epochs")
